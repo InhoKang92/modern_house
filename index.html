@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>모던하우스 공식몰</title>
+</head>
+<body>
+    
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <!-- 헤더 시작 -->
+    <header class="header">
+        <!-- 헤더 상단 -->
+        <div class="header_top">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./img/tlogo.png" alt="">
+                </a>
+            </h1>
+            <div class="mall_switch">
+                <ul>
+                    <li>
+                        <a href="./index.html" class="link_modern on">모던몰</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link_butter">버터샵</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_area">
+                <input type="text">
+                <a href="#"></a>
+            </div>
+            <div class="top_right">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon_login_.png" alt="">
+                            <span >로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon_join_.png" alt="">
+                            <span class="join_span">회원가입</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon_cart.png" alt="">
+                            <span>장바구니</span>
+                            <span class="cart_num">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon_call.png" alt="">
+                            <span>고객센터</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 헤더 하단 메뉴 부분 -->
+        <div class="header_menu">
+            <div class="menu_left">
+                <div class="menu_icon"></div>
+                <div class="cate">카테고리</div>
+
+                <!-- 마우스 오버 메뉴 -->
+                <div class="mainmenu">
+                    <ul>
+                        <li>
+                            <a href="#">주방</a>
+                            <ul class="submenu sub0">
+                                <li><a href="#">NEW</a></li>
+                                <li><a href="#">식기류</a></li>
+                                <li><a href="#">수저/커트러리</a></li>
+                                <li><a href="#">컵/잔</a></li>
+                                <li><a href="#">보틀/텀블러</a></li>
+                                <li><a href="#">테이블소품</a></li>
+                                <li><a href="#">팬/냄비</a></li>
+                                <li><a href="#">커피/티 용품</a></li>
+                                <li><a href="#">조리도구</a></li>
+                                <li><a href="#">보관용기</a></li>
+                                <li><a href="#">주방수납/정리</a></li>
+                                <li><a href="#">주방잡화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">패브릭</a>
+                            <ul class="submenu sub1">
+                                <li><a href="#">NEW</a></li>
+                                <li><a href="#">침구</a></li>
+                                <li><a href="#">알러지케어</a></li>
+                                <li><a href="#">담요/블랭킷</a></li>
+                                <li><a href="#">충전재</a></li>
+                                <li><a href="#">커튼/블라인드</a></li>
+                                <li><a href="#">쿠션/방석/패드</a></li>
+                                <li><a href="#">러그/매트</a></li>
+                                <li><a href="#">패브릭소품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">가구</a>
+                            <ul class="submenu sub2">
+                                <li><a href="#">침실가구</a></li>
+                                <li><a href="#">주방가구</a></li>
+                                <li><a href="#">거실가구</a></li>
+                                <li><a href="#">책상/책장/의자</a></li>
+                                <li><a href="#">서랍/수납/선반장</a></li>
+                                <li><a href="#">옷장/행거</a></li>
+                                <li><a href="#">키즈가구</a></li>
+                                <li><a href="#">택배가구</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">키즈</a>
+                            <ul class="submenu sub3">
+                                <li><a href="#">키즈플레이</a></li>
+                                <li><a href="#">키즈침구</a></li>
+                                <li><a href="#">키즈식기/주방</a></li>
+                                <li><a href="#">키즈욕실</a></li>
+                                <li><a href="#">키즈가구</a></li>
+                                <li><a href="#">키즈잡화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">린넨앤키친</a>
+                            <ul class="submenu sub4">
+                                <li><a href="#">패브릭</a></li>
+                                <li><a href="#">주방</a></li>
+                                <li><a href="#">리빙데코</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">욕실/생활</a>
+                            <ul class="submenu sub5">
+                                <li><a href="#">청소용품</a></li>
+                                <li><a href="#">휴지통/재활용</a></li>
+                                <li><a href="#">세탁/건조용품</a></li>
+                                <li><a href="#">바디/위생용품</a></li>
+                                <li><a href="#">욕실/생활잡화</a></li>
+                                <li><a href="#">타올/가운</a></li>
+                                <li><a href="#">욕실화</a></li>
+                                <li><a href="#">우산/우의</a></li>
+                                <li><a href="#">일회용품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">홈데코</a>
+                            <ul class="submenu sub6">
+                                <li><a href="#">인테리어 소품</a></li>
+                                <li><a href="#">캔들/디퓨저</a></li>
+                                <li><a href="#">홈앤가든</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">수납/정리</a>
+                            <ul class="submenu sub7">
+                                <li><a href="#">의류수납</a></li>
+                                <li><a href="#">바구니/박스</a></li>
+                                <li><a href="#">아이템정리</a></li>
+                                <li><a href="#">선반/트롤리/카트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">가전/라이프</a>
+                            <ul class="submenu sub8">
+                                <li><a href="#">가전/디지털</a></li>
+                                <li><a href="#">여행</a></li>
+                                <li><a href="#">플레이</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">펫본</a>
+                            <ul class="submenu sub9">
+                                <li><a href="#">하우스</a></li>
+                                <li><a href="#">방석/매트/계단</a></li>
+                                <li><a href="#">장난감</a></li>
+                                <li><a href="#">식기</a></li>
+                                <li><a href="#">간식</a></li>
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">액세서리</a></li>
+                                <li><a href="#">위생용품</a></li>
+                                <li><a href="#">가방</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">뷰티용품</a>
+                            <ul class="submenu sub10">
+                                <li><a href="#">개인위생용품</a></li>
+                                <li><a href="#">리필용기</a></li>
+                                <li><a href="#">미용소도구</a></li>
+                                <li><a href="#">헤어소품</a></li>
+                                <li><a href="#">시즌잡화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">주전부리</a>
+                            <ul class="submenu sub11">
+                                <li><a href="#">건강간식</a></li>
+                                <li><a href="#">달콤간식</a></li>
+                                <li><a href="#">건강티백</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <ul class="menu_right">
+                <li><a href="#">#썸머 핫딜</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">신상품</a></li>
+                <li><a href="#">SALE</a></li>
+                <li><a href="#">쿠폰/혜택</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">REVIEW</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 우측 하단 고정메뉴 -->
+    <div class="right_menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="./img/quick_icon01.png" alt="">
+                    <span>0</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/quick_icon02.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/quick_icon03.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 메인 슬라이더 -->
+    <section class="slider">
+        <div class="slide_wrap">
+            <a class="main_img_1" href="#">
+                <img src="./img/main_img_1.gif" alt="">
+            </a>
+            <a class="main_img_2" href="#">
+                <img src="./img/main_img_2.jpg" alt="">
+            </a>
+            <a class="main_img_3" href="#">
+                <img src="./img/main_img_3.jpg" alt="">
+            </a>
+            <a class="main_img_4" href="#">
+                <img src="./img/main_img_4.gif" alt="">
+            </a>
+            <a class="main_img_5" href="#">
+                <img src="./img/main_img_5.jpg" alt="">
+            </a>
+            <a class="main_img_6" href="#">
+                <img src="./img/main_img_6.jpg" alt="">
+            </a>
+            <a class="main_img_7" href="#">
+                <img src="./img/main_img_7.jpg" alt="">
+            </a>
+        </div>
+        <div class="main_arrow">
+            <a href="#"><div class="arrow_prev"></div></a>
+            <a href="#"><div class="arrow_next"></div></a>
+        </div>
+        <div class="main_bullet">
+            <span class="main_bullet_on"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="last_bullet"></span>
+        </div>
+    </section>
+    <!-- 메인 카테고리(주방, 패브릭, 가구 등등) -->
+    <section class="main_category">
+        <ul>
+            <li>
+                <a href="./sub.html">
+                    <img src="./img/mctg_1.png" alt="">
+                    <span>주방</span>
+                </a>
+            </li>
+            <li>
+                <a href="./sub.html">
+                    <img src="./img/mctg_2.png" alt="">
+                    <span>패브릭</span>
+                </a>
+            </li>
+            <li>
+                <a href="./sub.html">
+                    <img src="./img/mctg_3.png" alt="">
+                    <span>가구</span>
+                </a>
+            </li>
+            <li>
+                <a href="./sub.html">
+                    <img src="./img/mctg_4.png" alt="">
+                    <span>키즈</span>
+                </a>
+            </li>
+            <li>
+                <a href="./sub.html">
+                    <img src="./img/mctg_5.png" alt="">
+                    <span>린넨앤키친</span>
+                </a>
+            </li>
+            <li>
+                <a href="./sub.html">
+                    <img src="./img/mctg_6.png" alt="">
+                    <span>욕실・생활</span>
+                </a>
+            </li>
+            <li>
+                <a href="./sub.html">
+                    <img src="./img/mctg_7.png" alt="">
+                    <span>홈데코</span>
+                </a>
+            </li>
+            <li>
+                <a href="./sub.html">
+                    <img src="./img/mctg_8.png" alt="">
+                    <span>수납・정리</span>
+                </a>
+            </li>
+            <li>
+                <a href="./sub.html">
+                    <img src="./img/mctg_9.png" alt="">
+                    <span>가전・라이프</span>
+                </a>
+            </li>
+            <li>
+                <a href="./sub.html">
+                    <img src="./img/mctg_10.png" alt="">
+                    <span>펫본</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- 이미지 배너 -->
+    <section class="img_banner">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="./img/banner_1.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/banner_2.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+
+    </section>
+    <!-- 지금 뜨고 있는 베스트 -->
+    <section class="best_prd">
+        <div>
+            <div class="best_title">
+                <h3>
+                    <a href="./sub.html">지금 뜨고 있는 베스트</a>
+                    <a href="./sub.html">전체보기</a>
+                </h3>
+            </div>
+        </div>
+        <ul class="best_tab">
+            <li class="best_on">
+                <a href="#">전체</a>
+            </li>
+            <li>
+                <a href="#">주방</a>
+            </li>
+            <li>
+                <a href="#">패브릭</a>
+            </li>
+            <li>
+                <a href="#">가구</a>
+            </li>
+            <li>
+                <a href="#">키즈</a>
+            </li>
+            <li>
+                <a href="#">린넨앤키친</a>
+            </li>
+            <li>
+                <a href="#">욕실/생활</a>
+            </li>
+            <li>
+                <a href="#">홈데코</a>
+            </li>
+            <li>
+                <a href="#">수납/정리</a>
+            </li>
+            <li>
+                <a href="#">가전/라이프</a>
+            </li>
+        </ul>
+        <div class="best_items">
+            <div class="best_arrow">
+                <div class="best_arrow_prev"></div>
+                <div class="best_arrow_next"></div>
+            </div>
+            <dl class="item_container">
+                <dt class="item_thumnail">
+                    <a href="./sub.html">
+                        <img src="./img/best_01.jpg" alt="">
+                        <span>01</span>
+                    </a>
+                </dt>
+                <dd class="item_detail">
+                    <a href="./sub.html">ON 피그먼트 패드겸이불 아이보리</a>
+                    <div>
+                        <div class="item_price">
+                            <span>40%</span>
+                            <span>29,900원</span>
+                            <span>49,900원</span>
+                        </div>
+                        
+                        <a href="./sub.html"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="item_container">
+                <dt class="item_thumnail">
+                    <a href="./sub.html">
+                        <img src="./img/best_02.jpg" alt="">
+                        <span>02</span>
+                    </a>
+                </dt>
+                <dd class="item_detail">
+                    <a href="./sub.html">ON 스마일 멜라민 접시 4p세트</a>
+                    <div>
+                        <div class="item_price">
+                            <span>37%</span>
+                            <span>9,900원</span>
+                            <span>15,900원</span>
+                        </div>
+                        
+                        <a href="./sub.html"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="item_container">
+                <dt class="item_thumnail">
+                    <a href="./sub.html">
+                        <img src="./img/best_03.jpg" alt="">
+                        <span>03</span>
+                    </a>
+                </dt>
+                <dd class="item_detail">
+                    <a href="./sub.html">WOW 오풀로 카페테이블 2인세트</a>
+                    <div>
+                        <div class="item_price">
+                            <span style="color: #000;">117,700원</span>
+                        </div>
+                        
+                        <a href="./sub.html"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="item_container">
+                <dt class="item_thumnail">
+                    <a href="./sub.html">
+                        <img src="./img/best_04.jpg" alt="">
+                        <span>04</span>
+                    </a>
+                </dt>
+                <dd class="item_detail">
+                    <a href="./sub.html">키즈 꿈꾸는치타 폴딩우산의자 주니어</a>
+                    <div>
+                        <div class="item_price">
+                            <span>58%</span>
+                            <span>15,900원</span>
+                            <span>37,900원</span>
+                        </div>
+                        
+                        <a href="./sub.html"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="item_container">
+                <dt class="item_thumnail">
+                    <a href="./sub.html">
+                        <img src="./img/best_05.jpg" alt="">
+                        <span>05</span>
+                    </a>
+                </dt>
+                <dd class="item_detail">
+                    <a href="./sub.html">헤이 데일리 세면타올7P 180g</a>
+                    <div>
+                        <div class="item_price">
+                            <span style="color: #000;">29,900원</span>
+                        </div>
+                        
+                        <a href="./sub.html"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </section>
+    <!-- 고객님을 위한 맞춤 픽 -->
+    <section class="pick_prd">
+        <h3 class="pick_title">고객님을 위한 맞춤 PICK!</h3>
+        <div class="pick_items">
+            <dl class="pick_item_container">
+                <dt class="pick_thumnail">
+                    <a href="#">
+                        <img src="./img/pick_01.jpg" alt="">
+                    </a>
+                </dt>
+                <dd class="pick_detail">
+                    <a href="#">핀스트라이프 뱀부 거즈 블랑켓 오렌지 스트라이프 150x200</a>
+                    <div>
+                        <div class="pick_price">
+                            <span>50%</span>
+                            <span>19,900원</span>
+                            <span>39,900원</span>
+                        </div>
+
+                        <a href="#"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="pick_item_container">
+                <dt class="pick_thumnail">
+                    <a href="#">
+                        <img src="./img/pick_02.jpg" alt="">
+                    </a>
+                </dt>
+                <dd class="pick_detail">
+                    <a href="#">포레스트 고중량 세면타월 4P 180g GREY M R</a>
+                    <div>
+                        <div class="pick_price">
+                            <span></span>
+                            <span>19,900원</span>
+                            <span></span>
+                        </div>
+
+                        <a href="#"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="pick_item_container">
+                <dt class="pick_thumnail">
+                    <a href="#">
+                        <img src="./img/pick_03.jpg" alt="">
+                    </a>
+                </dt>
+                <dd class="pick_detail">
+                    <a href="#">ON 타원볼 4개+미니볼 2개세트</a>
+                    <div>
+                        <div class="pick_price">
+                            <span>40%</span>
+                            <span>17,900원</span>
+                            <span>29,900원</span>
+                        </div>
+
+                        <a href="#"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="pick_item_container">
+                <dt class="pick_thumnail">
+                    <a href="#">
+                        <img src="./img/pick_04.jpg" alt="">
+                    </a>
+                </dt>
+                <dd class="pick_detail">
+                    <a href="#">에토프 세면타월 NEON GREEN 40X80cm 190g</a>
+                    <div>
+                        <div class="pick_price">
+                            <span></span>
+                            <span>7,900원</span>
+                            <span></span>
+                        </div>
+
+                        <a href="#"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </section>
+    <!-- 따끈따끈한 신상품 -->
+    <section class="new_prd">
+        <div>
+            <div class="new_title">
+                <h3>
+                    <a href="#">따끈따끈한 신상품</a>
+                    <a href="#">전체보기</a>
+                </h3>
+            </div>
+        </div>
+        <div class="slide_cover">
+            <a href="#">
+                <dl class="slide_card">
+                    <dt class="card_thumnail">
+                        <img src="./img/new_01.jpg" alt="">
+                        <span>NEW</span>
+                    </dt>
+                    <dd class="new_detail">
+                        <h6>패브릭</h6>
+                        <h3>소프트브리즈 얇은 이불</h3>
+                        <p>온몸을 감싸는 포근함!</p>
+                        <p>부드러움을 극대화한 피치스킨</p>
+                        <p>가공을 한 얇은 차렵이불</p>
+                    </dd>
+                </dl>
+            </a>
+        </div>
+        <div class="new_bullet">
+            <span class="new_bullet_on"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="new_arrow">
+            <button class="new_arrow_prev"></button>
+            <button class="new_arrow_next"></button>
+        </div>
+    </section>
+    <!-- 이 달의 모던 픽 -->
+    <section class="modern_prd">
+        <h3 class="modern_title"><a href="#">이 달의 모던 PICK</a></h3>
+        <div class="modern_box">
+            <a href="#">
+                <div class="modern_item">
+                    <img class="modern_thumnail" src="./img/modern_01.jpg" alt="">
+                    <h3>시원한 여름 침구</h3>
+                    <p>더위를 많이 탄다면 강력 추천!<br>
+                    내 몸에 맏는 원단을 골라 열대야에도<br>
+                    쾌적하게 잠들 수 있는 환경을 만들어 보세요.</p>
+                    <span>더보기+</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="modern_item">
+                    <img class="modern_thumnail" src="./img/modern_02.jpg" alt="">
+                    <h3>여름 쿨 가전</h3>
+                    <p>시원함이 필요한 곳이라면 어디든 함께!<br>
+                    활용도에 따라 다양하게 준비한<br>
+                    쿨 가전으로 시원한 여름 보내세요.</p>
+                    <span>더보기+</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="modern_item">
+                    <img class="modern_thumnail" src="./img/modern_03.jpg" alt="">
+                    <h3>트렌디한 컬러 타월</h3>
+                    <p>트렌디한 디자인! 부드러운 소재!<br>
+                    집에서 매일 쓰기에도, 선물하기에도<br>
+                    좋은 타월로 뽀송뽀송한 하루 되세요.</p>
+                    <span>더보기+</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="modern_item">
+                    <img class="modern_thumnail" src="./img/modern_04.jpg" alt="">
+                    <h3>3도씨 쿨 아이템</h3>
+                    <p>무더위에도 시원하고 쾌적하게!<br>
+                    특수 냉감 소재로 닿는 순간 시원한<br>
+                    촉감을 느낄 수 있는 패브릭이에요.</p>
+                    <span>더보기+</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- 주목해야할 기획전 -->
+    <section class="plan_prd">
+        <div>
+            <div class="plan_title">
+                <h3>
+                    <a href="#">주목해야 할 기획전</a>
+                    <a href="#">전체보기</a>
+                </h3>
+            </div>
+            <div class="plan_items">
+                <div class="plan_left">
+                    <div class="plan_left_top">
+                        <a href="#">
+                            <img src="./img/plan_01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="plan_left_bottom">
+                        <a href="#">
+                            <img src="./img/plan_03.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/plan_04.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/plan_05.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="plan_right">
+                    <div class="plan_left_top">
+                        <a href="#">
+                            <img src="./img/plan_02.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="plan_left_bottom">
+                        <a href="#">
+                            <img src="./img/plan_06.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/plan_07.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/plan_08.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 모던 엠디의 추천 -->
+    <section class="recom_prd">
+        <h3 class="pick_title">모던 MD의 추천</h3>
+        <div class="recom_box">
+            <div class="recom_box_banner">
+                <a href="#">
+                    <img src="./img/recom_banner_01.jpg" alt="">
+                </a>
+            </div>
+            <dl class="recom_item_container">
+                <dt class="recom_thumnail">
+                    <a href="#">
+                        <img src="./img/recom_01.jpg" alt="">
+                    </a>
+                </dt>
+                <dd class="recom_detail">
+                    <a href="#">럭키버니 뱀부파이버 3칸나눔접시</a>
+                    <div>
+                        <div class="recom_price">
+                            <span></span>
+                            <span>10,900원</span>
+                            <span></span>
+                        </div>
+
+                        <a href="#"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="recom_item_container">
+                <dt class="recom_thumnail">
+                    <a href="#">
+                        <img src="./img/recom_02.jpg" alt="">
+                    </a>
+                </dt>
+                <dd class="recom_detail">
+                    <a href="#">럭키버니 뱀부파이버 원형접시D20 4P세트</a>
+                    <div>
+                        <div class="recom_price">
+                            <span></span>
+                            <span>14,900원</span>
+                            <span></span>
+                        </div>
+
+                        <a href="#"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="recom_item_container">
+                <dt class="recom_thumnail">
+                    <a href="#">
+                        <img src="./img/recom_03.jpg" alt="">
+                    </a>
+                </dt>
+                <dd class="recom_detail">
+                    <a href="#">럭키버니 무광 멜라민 레터 간식접시 D23 스플레터</a>
+                    <div>
+                        <div class="recom_price">
+                            <span></span>
+                            <span>4,900원</span>
+                            <span></span>
+                        </div>
+
+                        <a href="#"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="recom_item_container">
+                <dt class="recom_thumnail">
+                    <a href="#">
+                        <img src="./img/recom_04.jpg" alt="">
+                    </a>
+                </dt>
+                <dd class="recom_detail">
+                    <a href="#">핀럭키버니 뱀부파이버 원형핸들쟁반</a>
+                    <div>
+                        <div class="recom_price">
+                            <span></span>
+                            <span>15,900원</span>
+                            <span></span>
+                        </div>
+
+                        <a href="#"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="recom_item_container">
+                <dt class="recom_thumnail">
+                    <a href="#">
+                        <img src="./img/recom_05.jpg" alt="">
+                    </a>
+                </dt>
+                <dd class="recom_detail">
+                    <a href="#">럭키버니 뱀부파이버 원형접시D26</a>
+                    <div>
+                        <div class="recom_price">
+                            <span></span>
+                            <span>7,900원</span>
+                            <span></span>
+                        </div>
+
+                        <a href="#"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="recom_item_container">
+                <dt class="recom_thumnail">
+                    <a href="#">
+                        <img src="./img/recom_06.jpg" alt="">
+                    </a>
+                </dt>
+                <dd class="recom_detail">
+                    <a href="#">럭키버니 뱀부파이버 원형접시D20</a>
+                    <div>
+                        <div class="recom_price">
+                            <span></span>
+                            <span>4,900원</span>
+                            <span></span>
+                        </div>
+
+                        <a href="#"><img src="./img/icon_wish.png" alt=""></a>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </section>
+    <!-- 매장찾기, 버터샵, 키즈관 -->
+    <section class="store_banner">
+        <div class="store_banner_container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./img/store_banner_01.jpg" alt="">
+                        <span>매장찾기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/store_banner_02.jpg" alt="">
+                        <span>버터샵</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/store_banner_03.jpg" alt="">
+                        <span>키즈관</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 푸터 시작 -->
+    <footer class="footer">
+        <div class="footer_box"> 
+            <div class="logobox">
+                <div class="ftlogo">
+                    <a href="#">
+                        <img src="./img/flogonew.png" alt="">
+                    </a>
+                </div>
+                <ul class="snslogo">
+                    <li><a href="#"><img src="./img/footer_sns01.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/footer_sns03.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/footer_sns04.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/footer_sns05.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="infobox">
+                <div class="linklist">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">IR</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                        <li><a href="#">대량/제휴문의</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="companyinfo">
+                    <ul>
+                        <li>주소 : 서울특별시 구로구 경인로 662 (디큐브시티) 14층</li>
+                        <li>회사명 : MH&CO.</li>
+                        <li>대표이사 : 오상흔</li>
+                        <li>사업자등록번호 : 821-87-00617</li>
+                        <li>통신판매업번호 : 2017-서울구로-1368</li>
+                        <li>개인정보책임자 : 이효영</li>
+                    </ul>
+                </div>
+                <div class="certifyinfo">
+                    <span>고객님은 안전거래를 위해 결제 시 저희 사이트에서 가입한 구매안전 서비스를 이용하실 수 있습니다.</span>
+                    <a href="#">KCP 가입 확인</a>
+                </div>
+                <p>copyright. 2020. modernhousemall.com. All rights reserved.</p>
+            </div>
+            <div class="csbox">
+                <h3>고객문의 대표전화</h3>
+                <h2>1899-0811</h2>
+                <p>AM 09:00 ~ PM 06:00 <br>(주말 · 공휴일 휴무)</p>
+            </div>
+        </div>
+    </footer>  
+
+    <script src="./js/motion.js"></script>
+
+</body>
+</html>

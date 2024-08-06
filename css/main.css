@@ -1,0 +1,730 @@
+@charset "utf-8";
+
+/* 메인 슬라이더 */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 180px;
+}
+.slide_wrap {
+    display: flex;
+    width: 100%;
+}
+.slide_wrap>a {
+    display: block;
+    width: 100%;
+    flex-shrink: 0;
+}
+.slide_wrap>a>img {
+    width: 100%;
+}
+
+
+/* 슬라이더 화살표 */
+.arrow_prev {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(../img/arrow_prev_wh.png) 45% 50% / 13px rgba(122, 122, 122, 0.5) no-repeat;
+    position: absolute;
+    top: 38%;
+    left: 16%;
+}
+.arrow_next {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(../img/arrow_next_wh.png) 54% 50% / 13px rgba(122, 122, 122, 0.5) no-repeat;
+    position: absolute;
+    top: 38%;
+    right: 16%;
+}
+.main_bullet {
+    display: flex;
+    justify-content: center;
+    margin: 23px 0 30px;
+}
+.main_bullet>span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    margin: 0 7px;
+}
+.main_bullet>.main_bullet_on {
+    background: #2fb8bd;
+}
+
+
+
+/* 메인 카테고리(주방, 패브릭, 가구 등등) */
+.main_category {
+    width: 1275px;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+}
+.main_category>ul {
+    display: flex;
+    justify-content: space-between;
+}
+.main_category>ul>li>a {
+    display: block;
+    text-align: center;
+}
+.main_category>ul>li>a>span {
+    display: block;
+    font-size: 18px;
+    font-weight: 450;
+    margin-top: 12px;
+}
+
+
+/* 이미지 배너 */
+.img_banner {
+    padding-top: 110px;
+}
+.img_banner>ul {
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.img_banner>ul>li>a>img {
+    border-radius: 20px;
+}
+
+
+
+
+
+/* 지금 뜨고 있는 베스트 */
+.best_prd {
+    padding: 95px 0 132px  ;
+}
+.best_prd>div {
+    width: 1275px;
+    margin: 0 auto;
+}
+.best_title {
+    text-align: center;
+}
+.best_title>h3 {
+    position: relative;
+}
+.best_title>h3>a {
+    font-size: 38px;
+    font-weight: 600;
+}
+.best_title>h3>a:last-child {
+    font-size: 18px;
+    font-weight: 100;
+    color: #777777;
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    padding-right: 20px;
+}
+.best_title>h3>a:last-child::after {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid #777;
+    border-right: 1px solid #777;
+    position: absolute;
+    top: 8px;
+    right: 3px;
+    transform: rotate(45deg);
+}
+
+
+.best_tab {
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+.best_tab>li {
+    padding: 6px 22px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 500px;
+    background: #f1f1f1;
+    margin-left: 15px;
+}
+.best_tab>.best_on {
+    background: #2fb8bd;
+}
+.best_tab>.best_on>a {
+    color: #fff;
+}
+
+
+
+.best_items {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-left: 15px;
+}
+.item_thumnail>a>img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+.item_container {
+    margin-right: 22px;
+}
+.item_thumnail>a {
+    position: relative;
+}
+.item_thumnail>a>span {
+    position: absolute;
+    top: -204px;
+    left: 11px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2fb8bd;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.item_detail {
+    padding-top: 11px;
+}
+.item_detail>a {
+    display: block;
+    width: 230px;
+    font-size: 17px;
+    letter-spacing: -0.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item_detail>div>div {
+    font-size: 20px;
+    font-weight: 600;
+}
+.item_detail>div>div>span {
+    letter-spacing: -0.5px;
+}
+.item_detail>div>div>span:nth-child(1) {
+    color: #fe5f57;
+}
+.item_detail>div>div>span:nth-child(2) {
+    margin-left: 3px;
+}
+.item_detail>div>div>span:nth-child(3) {
+    font-size: 13px;
+    color: #888;
+    font-weight: 300;
+    margin-left: 3px;
+    text-decoration: line-through;
+}
+.item_detail>div>a {
+    display: block;
+    width: 21px;
+}
+.item_detail>div>a>img {
+    width: 100%;
+}
+.item_detail>div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+.item_detail>div>a {
+    padding-top: 7px;
+}
+.best_arrow {
+    position: relative;
+    width: 100%;
+}
+.best_arrow_prev {
+    position: absolute;
+    top: 90px;
+    left: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(122,122,122,0.5);
+    background-image: url(../img/arrow_prev_wh.png);
+    background-position: 46% 50%;
+    background-size: 13px;
+    background-repeat: no-repeat;
+    z-index: 500;
+    cursor: pointer;
+}
+.best_arrow_next {
+    position: absolute;
+    top: 90px;
+    left: 1212px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(122,122,122,0.5);
+    background-image: url(../img/arrow_next_wh.png);
+    background-position: 53% 50%;
+    background-size: 13px;
+    background-repeat: no-repeat;
+    z-index: 500;
+    cursor: pointer;
+}
+
+
+
+
+/* 고객님을 위한 맞춤 픽 */
+.pick_prd {
+    padding: 92px 0;
+    background: #f1f1f1;
+}
+.pick_title {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -2px;
+}
+.pick_items {
+    padding-top: 62px;
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+}
+.pick_item_container {
+    width: 299px;
+    margin: 0 10px;
+    padding: 6px;
+    background: #fff;
+    border-radius: 18px;
+}
+.pick_thumnail>a>img {
+    width: 100%;
+    border-radius: 13px 13px 0 0;
+}
+.pick_detail {
+    padding: 10px 10px 12px;
+}
+.pick_detail>a {
+    display: block;
+    width: 267px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.pick_item_container:nth-child(2)>.pick_detail>a {
+    width: 256px;
+}
+.pick_item_container:last-child>.pick_detail>a {
+    width: 236px;
+}
+.pick_detail>div>div {
+    font-size: 20px;
+    font-weight: 600;
+}
+.pick_detail>div>div>span {
+    letter-spacing: -0.5px;
+}
+.pick_detail>div>div>span:nth-child(1) {
+    color: #fe5f57;
+}
+.pick_detail>div>div>span:nth-child(2) {
+    margin-left: 3px;
+}
+.pick_detail>div>div>span:nth-child(3) {
+    font-size: 13px;
+    color: #888;
+    font-weight: 300;
+    margin-left: 3px;
+    text-decoration: line-through;
+}
+.pick_detail>div>a {
+    display: block;
+    width: 21px;
+}
+.pick_detail>div>a>img {
+    width: 100%;
+}
+.pick_detail>div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.pick_detail>div>a {
+    padding-top: 7px;
+}
+
+
+
+/* 따끈따끈한 신상품 */
+.new_prd {
+    position: relative;
+    padding: 100px 0;
+    background: #2fb8bd;
+}
+.new_prd>div:first-child {
+    width: 1275px;
+    margin: 0 auto;
+}
+.new_title {
+    text-align: center;
+}
+.new_title>h3 {
+    position: relative;
+}
+.new_title>h3>a {
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+}
+.new_title>h3>a:last-child {
+    font-size: 18px;
+    font-weight: 100;
+    color: #fff;
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    padding-right: 20px;
+}
+.new_title>h3>a:last-child::after {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    position: absolute;
+    top: 8px;
+    right: 3px;
+    transform: rotate(45deg);
+}
+.slide_cover {
+    width: 846px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 40px auto 0;
+    padding: 10px;
+}
+.slide_card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.card_thumnail {
+    position: relative;
+}
+.card_thumnail>img {
+    height: 100%;
+    border-radius: 20px;
+}
+.card_thumnail>span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    border-radius: 50%;
+    width: 81px;
+    height: 81px;
+    background: #508be6;
+    text-align: center;
+    line-height: 85px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+.new_detail {
+    padding: 90px 0 0 40px;
+}
+.new_detail>h6 {
+    font-size: 18px;
+    color: #696969;
+    font-weight: 300;
+}
+.new_detail>h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.new_detail>p {
+    font-size: 22px;
+    color: #696969;
+    font-weight: 300;
+}
+.new_bullet {
+    display: flex;
+    justify-content: center;
+    margin: 23px 0 30px;
+}
+.new_bullet>span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.75;
+    margin: 13px 5px 0;
+}
+.new_bullet>.new_bullet_on {
+    opacity: 1;
+}
+.new_arrow {
+    width: 100%;
+}
+.new_arrow_prev {
+    position: absolute;
+    top: 46%;
+    left: 24%;
+    width: 30px;
+    height: 52px;
+    background: url(../img/arrow_prev_wh.png) 50% 50% no-repeat;
+    background-size: 90%;
+    border: none;
+    cursor: pointer;
+}
+.new_arrow_next {
+    position: absolute;
+    top: 46%;
+    right: 24%;
+    width: 30px;
+    height: 52px;
+    background: url(../img/arrow_next_wh.png) 50% 50% no-repeat;
+    background-size: 90%;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* 이 달의 모던 픽 */
+.modern_prd {
+    padding: 92px 0;
+    background: #152e44;
+}
+.modern_title {
+    text-align: center;
+}
+.modern_title>a {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    color: #fff;
+}
+.modern_box {
+    width: 1275px;
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    margin: 53px auto;
+}
+.modern_item {
+    margin: 0 7px;
+}
+.modern_thumnail {
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+}
+.modern_item>h3, .modern_item>p, .modern_item>span {
+    color: #fff;
+}
+.modern_item>h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 12px 0 15px;
+}
+.modern_item>p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #d9d9d9;
+}
+.modern_item>span {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+
+
+
+/* 주목해야할 기획전 */
+.plan_prd {
+    padding: 100px 0;
+    background: #fff;
+}
+.plan_prd>div:first-child {
+    width: 1275px;
+    margin: 0 auto;
+}
+.plan_title {
+    text-align: center;
+}
+.plan_title>h3 {
+    position: relative;
+}
+.plan_title>h3>a {
+    font-size: 38px;
+    font-weight: 600;
+    color: #000;
+}
+.plan_title>h3>a:last-child {
+    font-size: 18px;
+    font-weight: 100;
+    color: #000;
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    padding-right: 20px;
+}
+.plan_title>h3>a:last-child::after {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    position: absolute;
+    top: 8px;   
+    right: 3px;
+    transform: rotate(45deg);
+}
+.plan_items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.plan_left_top>a>img {
+    width: 627.5px;
+    border-radius: 20px;
+}
+.plan_left_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.plan_left_bottom>a>img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+
+
+/* 모던 엠디의 추천 */
+.recom_prd {
+    padding: 92px 0 30px;
+    background: #f1f1f1;
+}
+.recom_title {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -2px;
+}
+.recom_box {
+    width: 1275px;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: 386px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 35px;
+}
+.recom_box_banner {
+    grid-row: 1/3;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 762px;
+}
+.recom_item_container {
+    border-radius: 18px;
+}
+.recom_thumnail>a>img {
+    width: 100%;
+    border-radius: 13px;
+}
+.recom_detail {
+    padding: 0 10px;
+}
+.recom_detail>a {
+    display: block;
+    width: 267px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.recom_detail>div>div {
+    font-size: 20px;
+    font-weight: 600;
+}
+.recom_detail>div>div>span {
+    letter-spacing: -0.5px;
+}
+.recom_detail>div>div>span:nth-child(1) {
+    color: #fe5f57;
+}
+.recom_detail>div>div>span:nth-child(2) {
+    margin-left: 3px;
+}
+.recom_detail>div>div>span:nth-child(3) {
+    font-size: 13px;
+    color: #888;
+    font-weight: 300;
+    margin-left: 3px;
+    text-decoration: line-through;
+}
+.recom_detail>div>a {
+    display: block;
+    width: 21px;
+}
+.recom_detail>div>a>img {
+    width: 100%;
+}
+.recom_detail>div {
+    display: flex;
+    justify-content: space-between;
+}
+.recom_detail>div>a {
+    padding-top: 7px;
+}
+
+
+
+/* 매장찾기, 버터샵, 키즈관 */
+.store_banner {
+    width: 100%;
+    padding: 92px 0;
+}
+.store_banner_container {
+    width: 1275px;
+    margin: 0 auto;
+}
+.store_banner_container>ul {
+    display: flex;
+    justify-content: space-between;
+}
+.store_banner_container>ul>li>a {
+    display: block;
+    text-align: center;
+}
+.store_banner_container>ul>li>a>img {
+    border-radius: 20px;
+}
+.store_banner_container>ul>li>a>span {
+    display: block;
+    letter-spacing: 0;
+}
